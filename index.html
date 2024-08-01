@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethic</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script language="Javascript" src="script.js"></script>
+    <link rel="icon" href="img/circle logo.png">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">Pendaftaran Ethic</div>
+      <div class="content">
+        <form name="formku" onsubmit="return validasi()" >
+          <div class="user-details">
+            <div class="input-inbox">
+              <span class="details">Nama Lengkap</span> 
+              <input type="text" name="teks" id="teks" placeholder="Masukkan nama lengkap" required />
+            </div>
+            <div class="input-inbox">
+              <span class="details">Nomor Telepon</span> 
+              <input
+                type="text"
+                name="number"
+                id="number"
+                placeholder="Masukkan nomor telepon"
+                required
+              />
+            </div>
+            <div class="input-inbox">
+              <span class="details">Email</span> 
+              <input type="email" name="email" id="email" placeholder="Masukkan email" required />
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="radio-1" />
+            <input type="radio" name="gender" id="radio-2" />
+            <span class="gender-title">Jenis Kelamin</span>
+            <div class="category">
+              <label for="radio-1">
+                <span class="radio one"></span>
+                <span class="gender">Laki-laki</span>
+              </label>
+              <label for="radio-2">
+                <span class="radio two"></span>
+                <span class="gender">Perempuan</span>
+              </label>
+          </div>
+         </div>
+          <div class="button">
+            <input type="submit" name="button" value="Daftar" onclick="validasi()"/>
+          </div>
+          <div class="reset">
+            <input type="reset" name="reset" value="Reset"/>
+          </div>
+          
+          
+        </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
